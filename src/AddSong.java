@@ -23,7 +23,9 @@ public class AddSong { // Adding song to library
       pstmt.setString(5, link);
 
       pstmt.executeUpdate();
-      System.out.println("Song " + "\"" + title + "\"" + " successfully added!");
+      System.out.println(
+        "Song " + "\"" + title + "\"" + " successfully added!"
+      );
     } catch (Exception e) {
       System.out.println(e.getMessage());
     }

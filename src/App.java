@@ -4,7 +4,6 @@ public class App {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    
 
     MainMenu menu = new MainMenu();
     Library library = new Library();
@@ -57,29 +56,28 @@ public class App {
             if (flag == 1) {
               System.out.println("Input new " + options[i] + ": ");
               options[i] = scanner.nextLine();
-            } else if (flag == 0){
+            } else if (flag == 0) {
               options[i] = get.song(i, id);
             }
           }
           update.updateSong(
-              id,
-              options[0],
-              options[1],
-              options[2],
-              Integer.parseInt(options[3]),
-              options[4]
-            );
+            id,
+            options[0],
+            options[1],
+            options[2],
+            Integer.parseInt(options[3]),
+            options[4]
+          );
           break;
         case 5:
           System.out.println("Enter title of the song to delete:");
           delete.deleteSong(scanner.nextLine());
           break;
-
         case 6:
-        System.out.println("Enter song ID: ");
-        getLink.getLink(Integer.parseInt(scanner.nextLine()));
+          System.out.println("Enter song ID: ");
+          getLink.getLink(Integer.parseInt(scanner.nextLine()));
 
-        break;
+          break;
         case 0:
           System.out.println("BB");
           System.exit(0);

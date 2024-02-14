@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.sql.*;
 
 public class App {
 
@@ -81,7 +80,7 @@ public class App {
         getLink.getLink(Integer.parseInt(scanner.nextLine()));
 
         break;
-        case 7:
+        case 0:
           System.out.println("BB");
           System.exit(0);
           break;

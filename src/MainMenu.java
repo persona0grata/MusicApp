@@ -8,7 +8,7 @@ public class MainMenu {
     System.out.println("(4) Update a song");
     System.out.println("(5) Delete a song");
     System.out.println("(6) Get link");
-    System.out.println("(7) Exit");
+    System.out.println("(0) Exit");
     System.out.print("Enter your choice: ");
   }
 }

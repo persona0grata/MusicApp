@@ -1,0 +1,30 @@
+---FOR DATABASE---
+
+-- Database: music_app_DB
+
+-- DROP DATABASE IF EXISTS "music_app_DB";
+
+CREATE DATABASE "music_app_DB"
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'en_US.UTF-8'
+    LC_CTYPE = 'en_US.UTF-8'
+    LOCALE_PROVIDER = 'libc'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
+
+
+
+---FOR TABLE---
+
+CREATE TABLE songs (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    artist VARCHAR(255) NOT NULL,
+    album VARCHAR(255) NOT NULL,
+    year INT,
+    link VARCHAR(255) NOT NULL
+);

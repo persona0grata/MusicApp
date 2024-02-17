@@ -12,6 +12,8 @@ public class App {
     DeleteSong delete = new DeleteSong();
     GetSong get = new GetSong();
     GetLink getLink = new GetLink();
+    CreateTable table = new CreateTable();
+    table.createTable();
 
     System.out.println("Welcome to Music App!");
     while (true) {

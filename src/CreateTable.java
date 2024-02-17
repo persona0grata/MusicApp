@@ -2,7 +2,7 @@ import java.sql.*;
 
 public class CreateTable {
 
-  public static void createTable() throws SQLException {
+  public static void createTable(){
     try (
       Connection conn = LaunchSQL.connect();
       Statement stmt = conn.createStatement();
